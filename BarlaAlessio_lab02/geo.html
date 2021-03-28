@@ -24,7 +24,7 @@
       function errorCallback() {alert("errr");}
 
       function successCallback(position) {
-        alert("errsfgsfgr");
+        alert(position.coords.latitude);
         var myLatlng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
         if(map == undefined) {
           var myOptions = {

@@ -16,13 +16,14 @@
                                                           {enableHighAccuracy:true,timeout:60000,maximumAge:0});
 
         } else {
-          console.log('Geolocation is not supported');
+          alert('Geolocation is not supported');
         }
       }
      
-      function errorCallback() {}
+      function errorCallback() {alert("errr");}
 
       function successCallback(position) {
+        alert("errsfgsfgr");
         var myLatlng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
         if(map == undefined) {
           var myOptions = {

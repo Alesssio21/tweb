@@ -10,7 +10,7 @@
     <script>
       var map; 
       function initGeolocation() {
-        if (navigator && navigator.geolocation) {
+        if (navigator.geolocation) {
         var watchId = navigator.geolocation.watchPosition(successCallback, 
                                                           errorCallback,
                                                           {enableHighAccuracy:true,timeout:60000,maximumAge:0});

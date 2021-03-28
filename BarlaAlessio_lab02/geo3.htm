@@ -11,6 +11,7 @@
       var map; 
       function initGeolocation() {
         if (navigator.geolocation) {
+          alert('Geolocati');
         var watchId = navigator.geolocation.watchPosition(successCallback, 
                                                           errorCallback,
                                                           {enableHighAccuracy:true,timeout:60000,maximumAge:0});
